@@ -1,0 +1,515 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Om Kumar Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/effect.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .dark-mode { background-color: #1a1a1a; color: #eee; }
+
+    .banner-photo {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+    .banner-photo:hover {
+      box-shadow: 0 0 25px #90D5FF;
+      transform: scale(1.05);
+    }
+
+    .intro-text {
+      background-color: #e6f7ff;
+      padding: 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .intro-text:hover { background-color: #d4f0ff; }
+
+    .section-navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      background-color: #1a1a1a;
+      padding: 15px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .section-navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .section-navbar a:hover {
+      background-color: #0077b6;
+      color: white;
+    }
+
+
+  .edu-card {
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 2px solid #90D5FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .edu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .edu-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .edu-card h3 {
+    color: #000;
+    margin-top: 15px;
+  }
+
+  .edu-card p,
+  .edu-card a {
+    color: #000;
+  }
+
+  .edu-card a {
+    color: #0077b6;
+    text-decoration: none;
+  }
+
+  .edu-card a:hover {
+    text-decoration: underline;
+  }
+
+
+   
+
+  </style>
+</head>
+<body class="is-preload">
+
+  <div id="wrapper">
+
+  <!-- Banner with Image and Intro -->
+<section id="banner" class="major" style="background: linear-gradient(135deg, #00b4db, #0083b0); padding: 60px 20px; color: white;">
+  <div class="inner" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; max-width: 1200px; margin: auto;">
+    
+    <!-- Profile Image -->
+    <div style="flex: 1; text-align: center;">
+      <img src="images/om.jpg" alt="Om Kumar" class="banner-photo" width="200" height="250"
+           style="object-fit: cover; border-radius: 16px; border: 4px solid #fff; box-shadow: 0 8px 20px rgba(0,0,0,0.3);">
+    </div>
+    
+    <!-- Text Content -->
+    <div style="flex: 2; text-align: left;">
+      <header class="major">
+        <h1 style="font-size: 2.8rem; margin-bottom: 10px; background: linear-gradient(to right, #ffffff, #d1ecff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hi, I'm Om Kumar</h1>
+      </header>
+      <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 20px;">
+        A passionate Information Technology student with experience in <strong>backend development</strong>, 
+        <strong>system design</strong>, and <strong>web technologies</strong>.<br />
+        Always curious to build impactful tech solutions.
+      </p>
+      
+      <!-- Buttons -->
+      <ul class="actions" style="display: flex; gap: 15px; flex-wrap: wrap;">
+        
+        <li>
+          <a href="om_resume2.pdf" target="_blank" class="button primary" 
+             style="background: #ff6a00; color: #fff; border: none; padding: 12px 20px; border-radius: 25px; font-weight: bold; transition: 0.3s;">
+            View & Download Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Navigation Bar -->
+    <div class="section-navbar">
+      <a href="#edu" class="scrolly">Education</a>
+      <a href="#skills" class="scrolly">Skills</a>
+      <a href="#experience" class="scrolly">Experience</a>
+      <a href="#projects" class="scrolly">Projects</a>
+      <a href="#contact" class="scrolly">Contact</a>
+    </div>
+
+    <!-- Education Section -->
+  <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+  <h2 style="
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3498db;
+    display: inline-block;
+    background-color: transparent;
+  ">
+    My Academic Journey
+  </h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+
+  <!-- MIT Muzaffarpur Card -->
+  <div style="
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 2px solid #90D5FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  "
+  onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+  onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.1)';"
+  >
+    <img src="images/mit.jpg" alt="MIT" style="width: 100%; border-radius: 8px; height: 150px; object-fit: cover;">
+    <h3 style="color: #000; margin-top: 15px;">MIT Muzaffarpur</h3>
+    <p style="color: #000;">🎓 B.Tech in IT<br>📚 CGPA: 7.89<br>📅 2021 – 2025</p>
+    <a href="https://www.mitmuzaffarpur.org/" target="_blank" style="color: #0077b6;">Visit Website</a>
+  </div>
+
+  <!-- PNPS School Card -->
+  <div style="
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 2px solid #90D5FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  "
+  onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+  onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.1)';"
+  >
+    <img src="images/pnps.jpg" alt="PNPS" style="width: 100%; border-radius: 8px; height: 150px; object-fit: cover;">
+    <h3 style="color: #000; margin-top: 15px;">PNPS School</h3>
+    <p style="color: #000;">🎓 Intermediate (PCM)<br>📊 86.2%<br>📅 2018 – 2020</p>
+    <a href="https://pnpschool.in/" target="_blank" style="color: #0077b6;">Visit Website</a>
+  </div>
+
+  <!-- DAV Admapur Card -->
+  <div style="
+    background-color: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    border: 2px solid #90D5FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  "
+  onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)';"
+  onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 5px rgba(0, 0, 0, 0.1)';"
+  >
+    <img src="images/dav.jpeg" alt="DAV" style="width: 100%; border-radius: 8px; height: 150px; object-fit: cover;">
+    <h3 style="color: #000; margin-top: 15px;">DAV Admapur</h3>
+    <p style="color: #000;">🎓 Class 10<br>📚 CGPA: 8.08<br>📅 Passout: 2018</p>
+    <a href="https://davsasaram.com/" target="_blank" style="color: #0077b6;">Visit Website</a>
+  </div>
+
+</div>
+
+
+    <!-- Skills Section -->
+    <section id="skills" style="padding: 60px 20px; background-color: transparent;">
+      <div style="max-width: 1100px; margin: auto; text-align: center;" >
+       <h2 style="
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3498db;
+    display: inline-block;
+    background-color: transparent;
+  ">
+      Technical Skills
+  </h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
+          <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px;" class="edu-card">
+            <h3 style="color: #000;">Frontend</h3>
+            <ul style="color: #000; text-align: left;">
+              <li>&rarr; HTML5</li>
+              <li>&rarr; CSS3</li>
+              <li>&rarr; JavaScript</li>
+              <li>&rarr; Bootstrap</li>
+              <li>&rarr; Tailwind CSS</li>
+            </ul>
+          </div>
+          <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px;"class="edu-card" >
+            <h3 style="color: #000;">Backend</h3>
+            <ul style="color: #000; text-align: left;">
+              <li>&rarr; Django</li>
+              <li>&rarr; REST APIs</li>
+              <li>&rarr; SQLite</li>
+              <li>&rarr; MySQL</li>
+            </ul>
+          </div>
+          <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px;"class="edu-card" >
+            <h3 style="color: #000;">Languages</h3>
+            <ul style="color: #000; text-align: left;">
+              <li>&rarr; Java</li>
+              <li>&rarr; Python</li>
+              <li>&rarr; C++</li>
+              <li>&rarr; JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section id="experience" " class="edu-section" style="padding: 60px 20px; background-color: transparent;">
+  <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+<h2 style="
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3498db;
+    display: inline-block;
+    background-color: transparent;
+  ">
+    Experience
+  </h2>
+
+
+
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
+      
+      <!-- Card 1 -->
+      <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 0 8px rgba(0,0,0,0.1);"  class="edu-card" >
+        <img src="images/mantra.jpg" alt="MIT" style="width: 100%; border-radius: 8px; height: 150px; object-fit: cover;">
+        <h3 style="color: #000; margin-top: 15px;">Mantra Softech (India) Pvt. Ltd.</h3>
+         <p style="color: #000;">Role: Graduate Engineer Trainee <br>Department: Software Products </p>
+        
+        
+       
+      </div>
+
+    
+  
+      <!-- Card 3 -->
+      <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 0 8px rgba(0,0,0,0.1);"  class="edu-card" >
+          <img src="images/myface.png" alt="MIT" style="width: 100%; border-radius: 8px; height: 150px; object-fit: cover;">
+        <h3 style="color: #000; margin-top: 15px;">"My Face Like Website"</h3>
+        <p style="color: #000;">Role: Backend Developer Intern<br>Duration: Sep 2024 – Nov 2024</p>
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects" class="edu-section" style="padding: 60px 20px; background-color: transparent;">
+  <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+    <h2 style="
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3498db;
+    display: inline-block;
+    background-color: transparent;
+  ">
+    Project
+  </h2>
+
+  <!-- Flex Container -->
+  <div style="display: flex; flex-wrap: nowrap; justify-content: center; gap: 20px; margin-top: 20px;">
+
+    <!-- Card 1 -->
+    <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 0 8px rgba(0,0,0,0.1);"
+      class="edu-card" >
+      <h3 style="color: #000; margin-top: 15px;">Fun Game Website</h3>
+      <p style="color: #000;">
+        &rarr; Django <br>
+        &rarr; SQLite<br>
+        &rarr; JavaScript
+      </p>
+      <a href="https://omkumar6458.github.io/notepad/" target="_blank" style="color: #0077b6;">Visit Website</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 0 8px rgba(0,0,0,0.1);"
+      class="edu-card" >
+      <h3 style="color: #000; margin-top: 15px;">Excel Clone</h3>
+      <p style="color: #000;">
+        &rarr; HTML, CSS, JavaScript <br>
+        &rarr; DSA<br>
+        &rarr; Real-time
+      </p>
+      <a href="https://omkumar6458.github.io/ExcelClone/" target="_blank" style="color: #0077b6;">Visit Website</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div style="background-color: #e6f7ff; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 0 8px rgba(0,0,0,0.1);"
+      class="edu-card" >
+      <h3 style="color: #000; margin-top: 15px;">Interactive Drawing App</h3>
+      <p style="color: #000;">
+        &rarr; HTML <br>
+        &rarr; CSS<br>
+        &rarr; JavaScript
+      </p>
+      <a href="https://omkumar6458.github.io/notepad/" target="_blank" style="color: #0077b6;">Visit Website</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+  <section id="contact" class="edu-section" style="padding: 60px 20px; background-color: transparent;">
+  <div style="max-width: 1100px; margin: 0 auto; text-align: center;">
+    
+<h2 style="
+    color: #3498db;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #3498db;
+    display: inline-block;
+    background-color: transparent;
+  ">
+     Contact us 
+  </h2>
+ 
+<div style="display: flex; flex-wrap: nowrap; justify-content: center; gap: 20px; margin-top: 20px;">
+  <div style="background-color: #e6f7ff; padding: 25px 20px; border-radius: 10px; width: 400px; box-shadow: 0 0 8px rgba(0,0,0,0.1);" class="edu-card">
+
+  <form method="POST" action="https://formspree.io/f/meoknywg" style="max-width: 100%; margin: 0 auto;">
+      <input type="hidden" name="_subject" value="New message from your portfolio!">
+
+      <label for="name" style="display: block; margin-bottom: 5px; color: #000;">Name</label>
+      <input type="text" id="name" name="name" required
+             style="width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="email" style="display: block; margin-bottom: 5px; color: #000;">Email</label>
+      <input type="email" id="email" name="email" required
+             style="width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ccc; border-radius: 5px;">
+
+      <label for="message" style="display: block; margin-bottom: 5px; color: #000;">Message</label>
+      <textarea id="message" name="message" rows="4" required
+                style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+      <div style="text-align: center;">
+        <button type="submit"
+                style="padding: 8px 20px; background-color: #0077b6; color: white; border: none; border-radius: 4px; cursor: pointer;">
+          Send Message
+        </button>
+      </div>
+    </form>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer" style="background-color: #7aaff8; padding: 30px 20px; color: white; text-align: center;">
+  <div class="inner" style="max-width: 1000px; margin: auto;">
+    
+    <!-- Logo / Name -->
+
+      Om Kumar
+    </div>
+
+    <!-- Social Icons -->
+    <ul class="icons" style="display: flex; justify-content: center; gap: 25px; margin: 20px 0; padding: 0; list-style: none;">
+      <li>
+        <a href="https://x.com/Omkumar1947490" target="_blank" class="icon brands fa-twitter" 
+           style="color: white; font-size: 1.5rem;">
+          <span class="label">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Omkumar6458" target="_blank" class="icon brands fa-github" 
+           style="color: white; font-size: 1.5rem;">
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/om-kumar-b45152232/" target="_blank" class="icon brands fa-linkedin-in" 
+           style="color: white; font-size: 1.5rem;">
+          <span class="label">LinkedIn</span>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Copyright -->
+    <div style="font-size: 0.9rem; color: #2cd5f3;">
+      &copy; 2025 Om Kumar &nbsp;|&nbsp; Design: >HTML5 UP</a>
+    </div>
+    
+  </div>
+</footer>
+
+
+
+
+
+  
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/Typing.js"></script>
+  <!-- Smooth scroll script -->
+<script>
+  document.querySelectorAll('.scrolly').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
+
+</body>
+</html>
